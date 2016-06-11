@@ -165,11 +165,20 @@ body {
 }
 
 
-/* Featurettes
-------------------------- */
-
 .divider {
 	border-color: #444; /* IE8 proofing */
   border-color: rgba(255,255,255,.2);
   margin: 30px 0 30px 0; /* Space out the Bootstrap <hr> more */
+}
+
+.download-btn {
+  height: 65px;
+}
+
+.left * {
+  text-align: left;
+}
+
+.left p,h2 {
+  padding: 5px 20px 5px 20px;
 }
