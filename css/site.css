@@ -182,3 +182,9 @@ body {
 .left p,h2 {
   padding: 5px 20px 5px 20px;
 }
+
+h4 {
+  padding: 5px 20px 0px 20px;
+  color: #74909d; /* IE8 proofing */
+  text-decoration: underline;
+}
