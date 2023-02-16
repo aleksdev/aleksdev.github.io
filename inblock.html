@@ -1,159 +1,122 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <meta name="description" content="AleksDev">
-    <meta name="author" content="Oleksandr Shchotkin">
-    <link rel="icon" href="./favicon.ico">
+<html lang="en" data-bs-theme="dark">
 
-    <title>AleksDev: InBlock</title>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="AleksDev">
+  <meta name="author" content="Oleksandr Shchotkin">
+  <link rel="icon" href="./favicon.ico">
 
-    <!-- Bootstrap core CSS -->
-    <link href="./css/bootstrap.min.css" rel="stylesheet">
+  <title>AleksDev: InBlock</title>
 
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <link href="./css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+  <!-- Bootstrap core CSS -->
+  <link href="./css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Custom styles for this template -->
-    <link href="./css/site.css" rel="stylesheet">
+  <!-- Custom styles for this template -->
+  <link href="./css/site.css" rel="stylesheet">
+</head>
 
-    <script src="./js/ie-emulation-modes-warning.js"></script>
+<body class="d-flex flex-column min-vh-100">
 
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-  </head>
-
-  <body>
-
-    <div class="site-wrapper">
-
-      <div class="site-wrapper-inner">
-
-        <div class="cover-container">
-
-          <div class="masthead clearfix">
-            <div class="inner">
-              <h3 class="masthead-brand">AleksDev</h3>
-              <nav>
-                <ul class="nav masthead-nav">
-                  <li><a href="./index.html">Home</a></li>
-                  <li><a href="#">About</a></li>
-                  <li><a href="#">Contact</a></li>
-                </ul>
-              </nav>
-            </div>
-          </div>
-        </div>
-
-        <div>
-        <img src="./img/inblock.png" alt="Hex Chains Icon" width="140" height="140">
-          <h1 class="cover-heading">InBlock</h1>
-        </div>
-
-      <div class="container left">
-        <h2>Description</h2>
-        <p>Your goal is to place figures of color blocks on the game field and create groups of three or more blocks of the same color that will be deleted and make space for new figures. The more blocks you remove at once, the more game points you will get. At the beginning of the game all the figures consist of blocks of the same color, but with score growth will appear blocks containing another blocks of a different color. After the removal of such blocks, the internal blocks will increase and occupy the places of the removed blocks. Did you make the wrong move? Use the undo button to undo your last move. Your game is automatically saved when you exit, so you can interrupt at any time and continue the game from the same place. Your goal is to survive as long as possible and score as many points as possible.</p>
-
-		<p>The game has 4 modes:</p>
-		<ul>
-			<li>Classic: blocks from the placed figures remain in their places, the figures can not be rotated;</li>
-			<li>Classic Roto: blocks from the placed figures remain in their places, the figures can be rotated before placement on the game field;</li>
-			<li>Gravity: blocks from placed figures will fall down until they collide another blocks or the edge of the game field, only after the fall they will be checked for match, the figures can not be rotated;</li>
-			<li>Gravity Roto: blocks from placed figures will fall down until they collide another blocks or the edge of the game field, only after the fall they will be checked for match, the figures can be rotated.</li>
-        <h2>Screenshots</h2>
-        <div class="row">
-          <div class="col-sm-4">
-            <div class="thumbnail">
-              <img src="./img/inblock_screen1.png" alt="Inblock Classic mode"/>
-            </div>
-          </div>
-          <div class="col-sm-4">
-            <div class="thumbnail">
-              <img src="./img/inblock_screen2.png" alt="Inblock Classic Roto mode"/>
-            </div>
-          </div>
-          <div class="col-sm-4">
-            <div class="thumbnail">
-              <img src="./img/inblock_screen3.png" alt="InBlock Gravity mode"/>
-            </div>
-          </div>
-        </div>
-		<div class="row">
-			<div class="col-sm-4">
-				<div class="thumbnail">
-				<img src="./img/inblock_screen4.png" alt="InBlock Gravity Roto mode"/>
-				</div>
-			</div>
-		</div>
-
-        <h2>Video</h2>
-        <div class="embed-responsive embed-responsive-16by9">
-          <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/do039cXidAQ"></iframe>
-        </div>
-
-        <h2>Download links</h2>
+  <nav class="navbar navbar-expand-md bg-body-tertiary">
+    <div class="container">
+      <a class="navbar-brand" href="./index.html">AleksDev</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-md-0">
+          <li class="nav-item">
+            <a class="nav-link" href="./index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+        </ul>
       </div>
-
-      <div class="container">
-
-      <div class="row">
-        <div class="col-md-3 col-sm-6" style="text-align: center; padding-bottom: 10px">
-          <a href="https://play.google.com/store/apps/details?id=io.github.aleksdev.inblock&referrer=utm_source%3Dwebsite">
-            <img class="download-btn" alt="Get it on Google Play" src="https://play.google.com/intl/en_us/badges/images/apps/en-play-badge.png" />
-          </a>
-        </div>
-<!--
-        <div class="col-md-3 col-sm-6" style="text-align: center; padding-bottom: 10px">
-          <a href="https://www.amazon.com/gp/product/B073QTPPYZ">
-            <img class="download-btn" alt="Get it on Amazon" src="https://images-na.ssl-images-amazon.com/images/G/01/mobile-apps/devportal2/res/images/amazon-underground-app-us-black.png" />
-          </a>
-        </div>
--->
-        <div class="col-md-3 col-sm-6" style="text-align: center; padding-bottom: 10px">
-          <a href="http://slideme.org/application/inblock">
-            <img class="download-btn" alt="Get it on SlideMe" src="./img/slideme.png" />
-          </a>
-        </div>
-
-        <div class="col-md-3 col-sm-6" style="text-align: center; padding-bottom: 10px">
-          <a href="http://apps.opera.com/badge.php?a=c&v=dark_v2&did=138466&pid=925242">
-            <img class="download-btn" alt="Get it on Opera" src="./img/opera_dark.png" />
-          </a>
-        </div>
-
-        <div class="col-md-3 col-sm-6" style="text-align: center; padding-bottom: 10px">
-          <a href="https://itunes.apple.com/app/id1240291595">
-            <img class="download-btn" alt="Get it on App Store" src="./img/appstore.svg" />
-          </a>
-        </div>
     </div>
+  </nav>
+
+  <div class="container fs-5 flex-grow-1">
+    <div class="text-center my-5">
+      <img src="./img/inblock.png" alt="Hex Chains Icon" class="game-icon-big">
+      <h1>InBlock</h1>
     </div>
 
-      <hr class="divider">
+    <h2 class="mt-4">Description</h2>
+    <p>Your goal is to place figures of color blocks on the game field and create groups of three or more blocks of the
+      same color that will be deleted and make space for new figures. The more blocks you remove at once, the more game
+      points you will get. At the beginning of the game all the figures consist of blocks of the same color, but with
+      score growth will appear blocks containing another blocks of a different color. After the removal of such blocks,
+      the internal blocks will increase and occupy the places of the removed blocks. Did you make the wrong move? Use
+      the undo button to undo your last move. Your game is automatically saved when you exit, so you can interrupt at
+      any time and continue the game from the same place. Your goal is to survive as long as possible and score as many
+      points as possible.</p>
+    <p>The game has 4 modes:</p>
+    <ul>
+      <li><strong>Classic</strong>: blocks from the placed figures remain in their places, the figures can not be
+        rotated;</li>
+      <li><strong>Classic Roto</strong>: blocks from the placed figures remain in their places, the figures can be
+        rotated before placement on the game field;</li>
+      <li><strong>Gravity</strong>: blocks from placed figures will fall down until they collide another blocks or the
+        edge of the game field, only after the fall they will be checked for match, the figures can not be rotated;</li>
+      <li><strong>Gravity Roto</strong>: blocks from placed figures will fall down until they collide another blocks or
+        the edge of the game field, only after the fall they will be checked for match, the figures can be rotated.</li>
+    </ul>
+
+    <h2 class="mt-4">Screenshots</h2>
+    <div class="row">
+      <div class="col-md-4 col-sm-6">
+        <img class="img-fluid img-thumbnail" src="./img/inblock_screen1.png" alt="Inblock Classic mode screenshot" />
       </div>
-
-      <div class="mastfoot">
-        <p>&copy; 2018 Oleksandr Shchotkin</p>
-      </div> 
-
+      <div class="col-md-4 col-sm-6">
+        <img class="img-fluid img-thumbnail" src="./img/inblock_screen2.png"
+          alt="Inblock Classic Roto mode screenshot" />
       </div>
-
+      <div class="col-md-4 col-sm-6">
+        <img class="img-fluid img-thumbnail" src="./img/inblock_screen3.png" alt="InBlock Gravity mode screenshot" />
+      </div>
+      <div class="col-md-4 col-sm-6">
+        <img class="img-fluid img-thumbnail" src="./img/inblock_screen4.png"
+          alt="InBlock Gravity Roto mode screenshot" />
+      </div>
     </div>
 
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
-    <script src="./js/bootstrap.min.js"></script>
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="./js/ie10-viewport-bug-workaround.js"></script>
-	<script src="./js/analytics.js"></script>
-  </body>
+    <h2 class="mt-4">Video</h2>
+    <div class="ratio ratio-16x9 my-2">
+      <iframe src="https://www.youtube.com/embed/do039cXidAQ"></iframe>
+    </div>
+
+    <h2 class="mt-4">Download links</h2>
+    <div class="row">
+      <div class="col my-2">
+        <a href="https://play.google.com/store/apps/details?id=io.github.aleksdev.inblock&referrer=utm_source%3Dwebsite">
+          <img class="download-btn" alt="Get it on Google Play"
+            src="https://play.google.com/intl/en_us/badges/images/apps/en-play-badge.png" />
+        </a>
+      </div>
+
+      <div class="col my-2">
+        <a href="https://itunes.apple.com/app/id1240291595">
+          <img class="download-btn" alt="Get it on App Store" src="./img/appstore.svg" />
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <footer class="container my-2 mt-auto">
+    <hr class="divider mb-3">
+    <p class="text-center text-muted">© 2023 Oleksandr Shchotkin</p>
+  </footer>
+
+  <script src="js/bootstrap.js"></script>
+  <script src="./js/analytics.js"></script>
+</body>
+
 </html>

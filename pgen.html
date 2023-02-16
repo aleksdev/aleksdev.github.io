@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="AleksDev">
+	<meta name="author" content="Oleksandr Shchotkin">
+	<link rel="icon" href="./favicon.ico">
+
+	<title>AleksDev: Password Generator</title>
+
+	<!-- Bootstrap core CSS -->
+	<link href="./css/bootstrap.min.css" rel="stylesheet">
+
+	<!-- Custom styles for this template -->
+	<link href="./css/site.css" rel="stylesheet">
+</head>
+
+<body class="d-flex flex-column min-vh-100">
+
+	<nav class="navbar navbar-expand-md bg-body-tertiary">
+		<div class="container">
+			<a class="navbar-brand" href="./index.html">AleksDev</a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+				data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+				aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav ms-auto mb-2 mb-md-0">
+					<li class="nav-item">
+						<a class="nav-link" href="./index.html">Home</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">About</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Contact</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<div class="container fs-5 flex-grow-1">
+		<div class="text-center my-5">
+			<h1>Password Generator</h1>
+		</div>
+
+		<hr class="divider">
+
+		<form class="col-xs-12 col-sm-10 col-md-8 col-lg-6 mx-auto my-5">
+			<div class="form-group my-2">
+				<label class="mb-2" for="key">Key</label>
+				<input id="key" placeholder="key" class="form-control form-control-lg" />
+			</div>
+			<div class="form-group my-2">
+				<label class="mb-2" for="source">Password phrase</label>
+				<input id="source" placeholder="password phrase" class="form-control form-control-lg" />
+			</div>
+			<div class="form-group my-2">
+				<label class="mb-2" for="result">Generated password</label>
+				<input id="result" class="form-control form-control-lg" readonly />
+			</div>
+		</form>
+
+	</div>
+
+	<footer class="container my-2 mt-auto">
+		<hr class="divider mb-3">
+		<p class="text-center text-muted">© 2023 Oleksandr Shchotkin</p>
+	</footer>
+
+	<script src="js/bootstrap.js"></script>
+	<script src="./js/analytics.js"></script>
+	<script type="text/javascript">
+		document.getElementById("key").addEventListener('keyup', convert);
+		document.getElementById("source").addEventListener('keyup', convert);
+
+		function convert() {
+			let key = document.getElementById('key').value;
+			let source = document.getElementById('source').value;
+			let password = generate(key, source);
+			document.getElementById('result').value = password;
+		}
+
+		function hashCode(input) {
+			let h = 0;
+			if (input.length > 0) {
+				for (var i = 0; i < input.length; i++) {
+					// to simulate 8 byte integer overflow
+					// https://stackoverflow.com/questions/23577810/simulate-a-32-bit-integer-overflow-in-javascript
+					h = (((31 * h) | 0) + input.charCodeAt(i)) | 0;
+				}
+			}
+			return h;
+		}
+
+		function generate(key, source) {
+			let keyHash = (Math.abs(hashCode(key.trim())) + source.length) | 0;
+			let par1 = keyHash % 100;
+			let par2 = Math.floor(keyHash / 100) % 31;
+			let par3 = Math.floor(keyHash / 10000) % 71;
+			let processedInput = source.trim().replaceAll(" ", "_");
+			let output = "";
+			for (var i = 0; i < processedInput.length; i++) {
+				let symbolCode = processedInput.charCodeAt(i);
+				if (symbolCode < 33 || symbolCode > 126) {
+					return "Illegal symbols in input!";
+				}
+				let newCode = symbolCode - 33;
+				newCode += par1 + i * (par2 + 1) + Math.floor(newCode / (par3 + 1));
+				newCode = newCode % 93 + 33;
+				let newSymbol = String.fromCharCode(newCode);
+				output += newSymbol;
+			}
+			return output;
+		}
+
+	</script>
+</body>
+
+</html>

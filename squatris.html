@@ -1,135 +1,107 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <meta name="description" content="AleksDev">
-    <meta name="author" content="Oleksandr Shchotkin">
-    <link rel="icon" href="./favicon.ico">
+<html lang="en" data-bs-theme="dark">
 
-    <title>AleksDev: Squatris</title>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="AleksDev">
+  <meta name="author" content="Oleksandr Shchotkin">
+  <link rel="icon" href="./favicon.ico">
 
-    <!-- Bootstrap core CSS -->
-    <link href="./css/bootstrap.min.css" rel="stylesheet">
+  <title>AleksDev: Squatris</title>
 
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <link href="./css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+  <!-- Bootstrap core CSS -->
+  <link href="./css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Custom styles for this template -->
-    <link href="./css/site.css" rel="stylesheet">
+  <!-- Custom styles for this template -->
+  <link href="./css/site.css" rel="stylesheet">
+</head>
 
-    <script src="./js/ie-emulation-modes-warning.js"></script>
+<body class="d-flex flex-column min-vh-100">
 
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-  </head>
-
-  <body>
-
-    <div class="site-wrapper">
-
-      <div class="site-wrapper-inner">
-
-        <div class="cover-container">
-
-          <div class="masthead clearfix">
-            <div class="inner">
-              <h3 class="masthead-brand">AleksDev</h3>
-              <nav>
-                <ul class="nav masthead-nav">
-                  <li><a href="./index.html">Home</a></li>
-                  <li><a href="#">About</a></li>
-                  <li><a href="#">Contact</a></li>
-                </ul>
-              </nav>
-            </div>
-          </div>
-        </div>
-
-        <div>
-        <img src="./img/squatris.png" alt="8!10!12! Puzzle Icon" width="140" height="140">
-          <h1 class="cover-heading">Squatris</h1>
-        </div>
-
-
-      <div class="container left">
-        <h2>Description</h2>
-        <p>Have some free time? It's time to train your brain with the Squatris puzzle!</p>
-
-		<p>Simple controls and rules. No restrictions on move time, play at your own speed. Automatic save when you exit, stop and continue a game at any time. Unlock more than 50 achievements.</p>
-
-		<h4>Squares game modes:</h4>
-		<p>Place figures on game field to fill the places marked with the same color (squares). When you fill a square it is erased to make space for new figures, and you earn score points. Erasing the large squares gives more points. The game continues until there is a space to put the next figure. Made wrong move? The last move can be canceled unless it led to the erasing of a square.</p>
-
-		<h4>Lines game modes:</h4>
-		<p>Place figures on game field to fill horizontal lines. When you fill a line it is erased to make space for new figures, and you earn score points. Erasing more than one line at once will give you more score points. The game continues until there is a space to put the next figure. Made wrong move? The last move can be canceled unless it led to the erasing of a line.</p>
-
-        <h2>Video</h2>
-        <div class="embed-responsive embed-responsive-16by9">
-          <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/yP_NpOUpw_o"></iframe>
-        </div>
-
-        <h2>Download links</h2>
+  <nav class="navbar navbar-expand-md bg-body-tertiary">
+    <div class="container">
+      <a class="navbar-brand" href="./index.html">AleksDev</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-md-0">
+          <li class="nav-item">
+            <a class="nav-link" href="./index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+        </ul>
       </div>
+    </div>
+  </nav>
 
-      <div class="container">
-
-      <div class="row">
-        <div class="col-md-3 col-sm-6" style="text-align: center; padding-bottom: 10px">
-          <a href="https://play.google.com/store/apps/details?id=tk.aleksdev.squatris.android&referrer=utm_source%3Dwebsite">
-            <img class="download-btn" alt="Get it on Google Play" src="https://play.google.com/intl/en_us/badges/images/apps/en-play-badge.png" />
-          </a>
-        </div>
-
-        <div class="col-md-3 col-sm-6" style="text-align: center; padding-bottom: 10px">
-          <a href="https://itunes.apple.com/app/squatris/id1114387225">
-            <img class="download-btn" alt="Get it on App Store" src="./img/appstore.svg" />
-          </a>
-        </div>
-<!--
-        <div class="col-md-3 col-sm-6" style="text-align: center; padding-bottom: 10px">
-          <a href="http://www.amazon.com/gp/product/B00XS4AGHC">
-            <img class="download-btn" alt="Get it on Amazon" src="https://images-na.ssl-images-amazon.com/images/G/01/mobile-apps/devportal2/res/images/amazon-underground-app-us-black.png" />
-          </a>
-        </div>
--->
-        <div class="col-md-3 col-sm-6" style="text-align: center; padding-bottom: 10px">
-          <a href="http://apps.opera.com/badge.php?a=c&v=dark&did=138466&pid=719506">
-            <img class="download-btn" alt="Get it on Opera" src="./img/opera_dark.png" />
-          </a>
-        </div>
-
-        <div class="col-md-3 col-sm-6" style="text-align: center; padding-bottom: 20px">
-          <a href="http://slideme.org/application/squatris">
-            <img class="download-btn" alt="Get it on SlideMe" src="./img/slideme.png" />
-          </a>
-        </div>
-      </div>
-
-      <hr class="divider">
-      </div>
-
-      <div class="mastfoot">
-        <p>&copy; 2019 Oleksandr Shchotkin</p>
-      </div> 
-
-      </div>
-
+  <div class="container fs-5 flex-grow-1">
+    <div class="text-center my-5">
+      <img src="./img/squatris.png" alt="Squatris Icon" class="game-icon-big">
+      <h1>Squatris</h1>
     </div>
 
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
-    <script src="./js/bootstrap.min.js"></script>
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="./js/ie10-viewport-bug-workaround.js"></script>
-	<script src="./js/analytics.js"></script>
-  </body>
+    <h2 class="mt-4">Description</h2>
+    <p>Have some free time? It's time to train your brain with the Squatris puzzle!</p>
+    <p>Simple controls and rules. No restrictions on move time, play at your own speed. Automatic save when you exit,
+      stop and continue a game at any time. Unlock more than 50 achievements.</p>
+
+    <h4 class="mt-4">Squares game modes</h4>
+    <p>Place figures on game field to fill the places marked with the same color (squares). When you fill a square it is
+      erased to make space for new figures, and you earn score points. Erasing the large squares gives more points. The
+      game continues until there is a space to put the next figure. Made wrong move? The last move can be canceled
+      unless it led to the erasing of a square.</p>
+
+    <h4 class="mt-4">Lines game modes</h4>
+    <p>Place figures on game field to fill horizontal lines. When you fill a line it is erased to make space for new
+      figures, and you earn score points. Erasing more than one line at once will give you more score points. The game
+      continues until there is a space to put the next figure. Made wrong move? The last move can be canceled unless it
+      led to the erasing of a line.</p>
+
+    <h2 class="mt-4">Video</h2>
+    <div class="ratio ratio-16x9 my-2">
+      <iframe src="https://www.youtube.com/embed/yP_NpOUpw_o" allowfullscreen></iframe>
+    </div>
+
+    <h2 class="mt-4">Download links</h2>
+    <div class="row">
+      <div class="col my-2">
+        <a
+          href="https://play.google.com/store/apps/details?id=tk.aleksdev.squatris.android&referrer=utm_source%3Dwebsite">
+          <img class="download-btn" alt="Get it on Google Play"
+            src="https://play.google.com/intl/en_us/badges/images/apps/en-play-badge.png" />
+        </a>
+      </div>
+
+      <div class="col my-2">
+        <a href="https://itunes.apple.com/app/squatris/id1114387225">
+          <img class="download-btn" alt="Get it on App Store" src="./img/appstore.svg" />
+        </a>
+      </div>
+
+      <div class="col my-2">
+        <a href="http://slideme.org/application/squatris">
+          <img class="download-btn" alt="Get it on SlideMe" src="./img/slideme.png" />
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <footer class="container my-2 mt-auto">
+    <hr class="divider mb-3">
+    <p class="text-center text-muted">© 2023 Oleksandr Shchotkin</p>
+  </footer>
+
+  <script src="js/bootstrap.js"></script>
+  <script src="./js/analytics.js"></script>
+</body>
+
 </html>
